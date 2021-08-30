@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	font-family: "Source Sans Pro", sans-serif;
+}
+hr
+{
+	background-color:rgb(229,229,229);
+	border: 0;
+	color:rgb(229,229,229);
+	height: 1px;
+	margin-top: 1px;
+}
+h1, h2, h3, h4
+{
+	font-size: 21px;
+	font-weight: normal;
+}
+h1 {
+	font-size: 32px;
+	color: rgb(52, 73, 94);
+	margin-bottom: 1px;
+}
+h2 {
+	margin-bottom: 1px;
+}
+li, td {
+	margin-left: 95px;
+	font-size: 14px;
+}
+table { 
+	margin-left: 135px;
+}
+ul {
+    list-style-type: none;
+}
+label {
+	font-size: 14px;
+	font-weight: 700;
+	padding-right: 20px;
+}
+#belowlabel {
+	display: block;
+}
+input, select {
+	background-color: #FFFFFF;
+	border-color: rgb(204,204,204);
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	margin: 7px;
+	padding: 9px;
+}
+#coursetype input {
+	width: 480px;
+}
+#coursetype select {
+	width: 500px;
+}
+form {
+	text-align: right;
+}
+#search {
+	background-color: rgb(92, 184, 92);
+	border-radius: 5px;
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	margin-left: 150px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+#courses
+{
+	background-color: rgb(245,245,245);
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(227,227,227);
+	margin-left: 40px;
+	padding: 20px;
+	width: 700px;
+}
+#timelabel1 {
+	margin-left: 15px;
+	font-weight: normal;
+}
+#timelabel2 {
+	margin-left: 5px;
+	font-weight: normal;
+}
+#opening {
+	padding-bottom: 75px;
+}
+#rightAlign {
+	display: inline-block;
+}
+.title{
+	display: inline-block;
+}

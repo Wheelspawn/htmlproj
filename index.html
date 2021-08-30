@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Courses - MyUI</title>
+		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="opening">
+			<div id="rightDiv" style="float:right;">
+				<p><strong>Session</strong>
+					<select name="session" style="margin-right:50px;">
+					<option value="winter2021">Winter 2021</option>
+					<option value="fall2021", selected="selected">Fall 2021</option>
+					<option value="summer2021">Summer 2021</option>
+					<option value="spring2021">Spring 2021</option>
+					</select>
+				</p>
+			</div>
+			<div id="leftDiv" style="float:left; margin-left:50px;">
+				<h1 >COURSES</h1>
+			</div>
+		</div>
+		<div><hr style="visibility:hidden"/></div>
+		<hr/>
+		<div id="courses">
+			<div id="coursetype">
+				<h2>Course Type</h2>
+				<hr/>
+				<form action="" method="get">
+					<label>Session</label>
+					<select name="session">
+						<option value="winter2021">Winter 2021</option>
+						<option value="fall2021", selected="selected">Fall 2021</option>
+						<option value="summer2021">Summer 2021</option>
+						<option value="spring2021">Spring 2021</option>
+					</select>
+				</form>
+				<form action="" method="get">
+					<label>Course Subject</label>
+					<input type="text" name="coursesubject" placeholder="Subject" size="50" maxlength="50" />
+				</form>
+				<form action="" method="get">
+					<label>Course Number</label>
+					<input type="text" name="coursenumber" placeholder="Course" size="50" maxlength="50" />
+				</form>
+				<form action="" method="get">
+					<label>Section Number</label>
+					<input type="text" name="sectionnumber" placeholder="Section" size="50" maxlength="50" />
+				</form>
+				<form action="" method="get">
+					<label>Keywords</label>
+					<input type="text" name="keywords" placeholder="Matches on course titles" size="50" maxlength="50" />
+				</form>
+				<form action="" method="get">
+					<label>Instructor</label>
+					<input type="text" name="instructor" placeholder="Matches on instructor names" size="50" maxlength="50" />
+				</form>
+				<form action="" method="get">
+					<label>Gen Ed</label>
+					<select name="gened">
+						<option value="none", selected="selected"></option>
+						<option value="other">-- Gen Eds for Other Colleges --</option>
+						<option value="disabled", disabled><b>Carver College of Medicine</b></option>
+						<option value="diversity">Diversity and Inclusion</option>
+						<option value="historicalperspectives">Historical Perspectives</option>
+					</select>
+				</form>
+				<form action="" method="get">
+					<label>Learning Center</label>
+					<select name="learningcenter">
+						<option value="none", selected="selected"></option>
+						<option value="birchwood">Birchwood Fields Learning Center - Davenport, Iowa</option>
+						<option value="briarcliff">Briar Cliff University - Sioux City, Iowa</option>
+					</select>
+				</form>
+			</div>
+			<div id="times">
+				<h2>Days and Times</h2>
+				<hr/>
+				<label>Days</label>
+				<div id="rightAlign">
+					<table>
+						<tr>
+							<td><input type="checkbox" name="mode" value="sunday"/>Sunday</td>
+							<td><input type="checkbox" name="mode" value="monday"/>Monday</td>
+							<td><input type="checkbox" name="mode" value="tuesday"/>Tuesday</td>
+							<td><input type="checkbox" name="mode" value="wednesday"/>Wednesday</td>
+						</tr>
+						</tr>
+							<td><input type="checkbox" name="mode" value="thursday"/>Thursday</td>
+							<td><input type="checkbox" name="mode" value="friday"/>Friday</td>
+							<td><input type="checkbox" name="mode" value="saturday"/>Saturday</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<br>
+				<div id="times">
+					<label>Between Times</label>
+					<select name="start" style="margin-left: 80px;">
+						<option value="none", selected="selected"></option>
+						<option value="600am">6:00 am</option>
+						<option value="630am">6:30 am</option>
+						<option value="700am">7:00 am</option>
+					</select>
+					<label id="timelabel1">and</label>
+					<select name="end">
+						<option value="none", selected="selected"></option>
+						<option value="600am">6:00 am</option>
+						<option value="630am">6:30 am</option>
+						<option value="700am">7:00 am</option>
+					</select>
+					<input type="checkbox" name="mode" value="saturday"/>
+					<label id="timelabel2">Arranged Time</label>
+				</div>
+			</div>
+			<div id="delivery">
+				<h2>Delivery</h2>
+				<hr/>
+				<label>Mode</label>
+				<div id = "rightAlign">
+					<ul>
+						<li><input type="checkbox" name="mode" value="facetoface"/>Face to Face </li>
+						<li><input type="checkbox" name="mode" value="withstudentrot"/>Hybrid with Student Rotation  </li>
+						<li><input type="checkbox" name="mode" value="withoutstudentrot"/>Hybrid without Student Rotation  </li>
+						<li><input type="checkbox" name="mode" value="web"/>Web </li>
+						<li><input type="checkbox" name="mode" value="distanceandonline"/> Distance and Online Courses and Workshops  </li>
+						<ul>
+							<li><input type="checkbox" name="mode" value="workshops"/>Workshops </li>
+							<li><input type="checkbox" name="mode" value="webonline"/>Web/Online  </li>
+							<li><input type="checkbox" name="mode" value="offcampus"/>Off Campus/Face to Face</li>
+						</ul>
+					</ul>
+				</div>
+				<hr/>
+				<input id="search" type="submit" name="search" value="Search" />
+				<div id = "rightAlign">
+					<ul style="margin-left:-100px;">
+						<li><input type="checkbox" name="mode" value="opencourses"/>Only open courses </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
