@@ -49,12 +49,17 @@
 				</form>
 				<form action="" method="get">
 					<label>Keywords</label>
-					<input type="text" name="keywords" placeholder="Matches on course titles" size="50" maxlength="50" />
+						<input type="text" name="keywords" placeholder="Matches on course titles" size="50" maxlength="50" />
 				</form>
+				<label id="formlabel">
+				3 character minimum</label>
 				<form action="" method="get">
 					<label>Instructor</label>
-					<input type="text" name="instructor" placeholder="Matches on instructor names" size="50" maxlength="50" />
+						<input type="text" name="instructor" placeholder="Matches on instructor names" size="50" maxlength="50" />
 				</form>
+				<label id="formlabel">
+				e.g. Smith, John / John Smith / John / Smith 
+				</label>
 				<form action="" method="get">
 					<label>Gen Ed</label>
 					<select name="gened">
@@ -97,8 +102,8 @@
 				</div>
 				<br>
 				<div id="times">
-					<label>Between Times</label>
-					<select name="start" style="margin-left: 80px;">
+					<label style="margin-left: 75px;">Between Times</label>
+					<select name="start" style="margin-left: 8px;">
 						<option value="none", selected="selected"></option>
 						<option value="600am">6:00 am</option>
 						<option value="630am">6:30 am</option>
@@ -118,25 +123,29 @@
 			<div id="delivery">
 				<h2>Delivery</h2>
 				<hr/>
-				<label>Mode</label>
-				<div id = "rightAlign">
-					<ul>
-						<li><input type="checkbox" name="mode" value="facetoface"/>Face to Face </li>
-						<li><input type="checkbox" name="mode" value="withstudentrot"/>Hybrid with Student Rotation  </li>
-						<li><input type="checkbox" name="mode" value="withoutstudentrot"/>Hybrid without Student Rotation  </li>
-						<li><input type="checkbox" name="mode" value="web"/>Web </li>
-						<li><input type="checkbox" name="mode" value="distanceandonline"/> Distance and Online Courses and Workshops  </li>
-						<ul>
-							<li><input type="checkbox" name="mode" value="workshops"/>Workshops </li>
-							<li><input type="checkbox" name="mode" value="webonline"/>Web/Online  </li>
-							<li><input type="checkbox" name="mode" value="offcampus"/>Off Campus/Face to Face</li>
-						</ul>
-					</ul>
-				</div>
+				<table>
+					<tr>
+						<th><label>Mode</label></th>
+						<td>
+							<ul>
+								<li><input type="checkbox" name="mode" value="facetoface"/>Face to Face </li>
+								<li><input type="checkbox" name="mode" value="withstudentrot"/>Hybrid with Student Rotation  </li>
+								<li><input type="checkbox" name="mode" value="withoutstudentrot"/>Hybrid without Student Rotation  </li>
+								<li><input type="checkbox" name="mode" value="web"/>Web </li>
+								<li><input type="checkbox" name="mode" value="distanceandonline"/> Distance and Online Courses and Workshops  </li>
+								<ul>
+									<li><input type="checkbox" name="mode" value="workshops"/>Workshops </li>
+									<li><input type="checkbox" name="mode" value="webonline"/>Web/Online  </li>
+									<li><input type="checkbox" name="mode" value="offcampus"/>Off Campus/Face to Face</li>
+								</ul>
+							</ul>
+						</td>
+					</tr>
+				</table>
 				<hr/>
 				<input id="search" type="submit" name="search" value="Search" />
 				<div id = "rightAlign">
-					<ul style="margin-left:-100px;">
+					<ul style="margin-left:5px;">
 						<li><input type="checkbox" name="mode" value="opencourses"/>Only open courses </li>
 					</ul>
 				</div>
